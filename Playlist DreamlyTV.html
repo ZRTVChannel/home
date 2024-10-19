@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <meta http-equiv="refresh" content="0;url
+    =https://youtu.be/3M0eeXXnjeo?si=wT-fG4UiAZJ1VZpV">
+    <title>Playlist DreamlyTV</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+        <div class="logo"><a href="">DreamlyTV</a></div>
+        <ul class="links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Playlist DreamlyTV.html">Playlist DreamlyTV</a></li>
+            <li><a href="Tutorial.html">Tutorial</a></li>
+            <li><a href="Report CH.html">Report CH</a></li>
+           </ul>
+            <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+       </div>
+    
+       <div class="dropdown_menu">
+        <li><a href="home.html">Home</a></li>
+         <li><a href="Playlist DreamlyTV.html">Playlist DreamlyTV</a></li>
+         <li><a href="Tutorial.html">Tutorial</a></li>
+         <li><a href="Report CH.html">Report CH</a></li>
+       </div>
+      </header>
+    
+      <main>
+        <section id="hero">
+            <h1>WARNING!!! ADA ORANG JOMOK TIGE!!!</h1>
+            <p>True and bartleby and zee say: HATI-HATI</p>
+        </section>
+      </main>
+    <script>
+      const toggleBtn = document.querySelector('.toggle_btn')
+      const toggleBtnIcon = document.querySelector('.toggle_btn i')
+      const dropDownMenu = document.querySelector('.dropdown_menu')
+    
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+         const isopen = dropDownMenu.classList.contains('open')
+    
+         toggleBtn.classList = isopen
+         ? 'fa-solid fa-xmark'
+         : 'fa-solid fa-bars'
+      }
+    </script>
+ </head>
+</html>
+
+#EXTM3U
+#EXTM3U player-buffer="20" url-tvg="https://www.bevy.be/bevyfiles/indonesia.xml,https://www.bevy.be/bevyfiles/indonesiapremium1.xml,https://www.bevy.be/bevyfiles/indonesiapremium3.xml,https://www.bevy.be/bevyfiles/singaporepremium.xml.gz"tvg-url="https://www.bevy.be/bevyfiles/singaporepremium.xml" refresh="1440" max-conn="1" refresh="24"
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/ZRTVChannel/DreamlyTV/refs/heads/main/pikaso_edit_Text-DreamlyTV-into-dream-space.jpeg" group-title="Welcome To DreamlyTV",Welcome To DreamlyTV
+https://github.com/ZRTVChannel/DreamlyTV/raw/refs/heads/main/lv_0_20241008184003.ts
