@@ -6,26 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tutorial DreamlyTV</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
 
-    <h1>DreamlyTV</h1>
-
-    <nav class="navbar">
-        <ul>
-           <li><a href="home.html">Home</a></li>
-           <li><a href="Playlist DreamlyTV.html">Playlist DreamlyTV</a></li>
-           <li><a href="Tutorial.html">Tutorial</a></li>
-           <li><a href="Report CH.html">Report CH</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <h3>DreamlyTV Tutorial</h3>
-        <p>1.Load epg di ott navigator:https://s.id/Epgloadott           
-           2.Refresh playlist ver tivimate lama:https://s.id/Refreshlama
-           3.Refresh playlist ver tivimate baru:https://s.id/Refreshbaru
-           Tinggal aja salin linknya</p>
-    </main>
+   <header>
+        <div class="navbar">
+        <div class="logo"><a href="">DreamlyTV</a></div>
+        <ul class="links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Playlist DreamlyTV.html">Playlist DreamlyTV</a></li>
+            <li><a href="Tutorial.html">Tutorial</a></li>
+            <li><a href="Report CH.html">Report CH</a></li>
+           </ul>
+            <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+       </div>
+    
+       <div class="dropdown_menu">
+        <li><a href="home.html">Home</a></li>
+         <li><a href="Playlist DreamlyTV.html">Playlist DreamlyTV</a></li>
+         <li><a href="Tutorial.html">Tutorial</a></li>
+         <li><a href="Report CH.html">Report CH</a></li>
+       </div>
+      </header>
+    
+      <main>
+        <section id="hero">
+            <h1>Tutorial DreamlyTV</h1>
+            <p>1.Load epg di ott navigator:https://s.id/Epgloadott           
+               2.Refresh playlist ver tivimate lama:https://s.id/Refreshlama
+               3.Refresh playlist ver tivimate baru:https://s.id/Refreshbaru
+               Tinggal aja salin linknya</p>
+        </section>
+      </main>
+    <script>
+      const toggleBtn = document.querySelector('.toggle_btn')
+      const toggleBtnIcon = document.querySelector('.toggle_btn i')
+      const dropDownMenu = document.querySelector('.dropdown_menu')
+    
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+         const isopen = dropDownMenu.classList.contains('open')
+    
+         toggleBtn.classList = isopen
+         ? 'fa-solid fa-xmark'
+         : 'fa-solid fa-bars'
+      }
+    </script>
+</head>
 </body>
 </html>
