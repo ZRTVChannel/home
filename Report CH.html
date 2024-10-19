@@ -6,10 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Report Channel</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <meta http-equiv="refresh" content="0;url
     =https://forms.gle/zKBNkeWC1vcUsdky9">
 </head>
 <body>
+
+    <header>
+        <div class="navbar">
+        <div class="logo"><a href="">DreamlyTV</a></div>
+        <ul class="links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Playlist DreamlyTV.html">Playlist DreamlyTV</a></li>
+            <li><a href="Tutorial.html">Tutorial</a></li>
+            <li><a href="Report CH.html">Report CH</a></li>
+           </ul>
+            <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+       </div>
+    
+       <div class="dropdown_menu">
+        <li><a href="home.html">Home</a></li>
+         <li><a href="Playlist DreamlyTV.html">Playlist DreamlyTV</a></li>
+         <li><a href="Tutorial.html">Tutorial</a></li>
+         <li><a href="Report CH.html">Report CH</a></li>
+       </div>
+      </header>
 
     <h1>DreamlyTV</h1>
 
@@ -23,10 +46,25 @@
     </nav>
 
     <main>
-        <h3>Report Channel</h3>
-        <p>Isi Yang Benar Ya, jangan isi error playlist
-           4.Boleh Dibagi-bagi Ke Telegram Atau Youtube, Walaupun WA.
-           Jika Error Channel, Silahkan Klik Report CH</p>
-    </main>
+        <section id="hero">
+            <h1>Report Channel</h1>
+            <p>Wajib Isi Yang Benar, Jangan Isi yang playlist error</p>
+        </section>
+      </main>
+    <script>
+      const toggleBtn = document.querySelector('.toggle_btn')
+      const toggleBtnIcon = document.querySelector('.toggle_btn i')
+      const dropDownMenu = document.querySelector('.dropdown_menu')
+    
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+         const isopen = dropDownMenu.classList.contains('open')
+    
+         toggleBtn.classList = isopen
+         ? 'fa-solid fa-xmark'
+         : 'fa-solid fa-bars'
+      }
+    </script>
+</head>
 </body>
 </html>
