@@ -10,7 +10,7 @@
 </head>
 <body>
 <?php 
-  include("my.php");
+  header('location: www.google.com');
 
 ?>
     <header>
