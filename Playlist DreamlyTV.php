@@ -9,16 +9,16 @@
     <title>Playlist DreamlyTV</title>
 </head>
 <body>
-    <?php 
-    include("my.php");
+<?php 
+  include("my.php");
 
-    ?>
+?>
     <header>
         <div class="navbar">
         <div class="logo"><a href="">DreamlyTV</a></div>
         <ul class="links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="Playlist DreamlyTV.html">Playlist DreamlyTV</a></li>
+            <li><a href="Playlist DreamlyTV.php">Playlist DreamlyTV</a></li>
             <li><a href="Tutorial.html">Tutorial</a></li>
             <li><a href="Report CH.html">Report CH</a></li>
            </ul>
@@ -29,7 +29,7 @@
     
        <div class="dropdown_menu">
         <li><a href="index.html">Home</a></li>
-         <li><a href="Playlist DreamlyTV.html">Playlist DreamlyTV</a></li>
+         <li><a href="Playlist DreamlyTV.php">Playlist DreamlyTV</a></li>
          <li><a href="Tutorial.html">Tutorial</a></li>
          <li><a href="Report CH.html">Report CH</a></li>
        </div>
